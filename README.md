@@ -30,14 +30,22 @@ O histórico do exercício deve conter pelo menos 3 commits semânticos:
 
 ## Como publicar
 
-Se o Git já estiver configurado, entre nesta pasta e execute:
+O ZIP contém o histórico Git já preparado, incluindo a branch `refactor/reorganizar-cabecalho` e o remoto `origin` configurado para o repositório informado.
+
+Depois de extrair a pasta, abra o terminal dentro dela e confira:
 
 ```bash
-git remote add origin https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git
-git branch -M main
-git checkout -b refactor/reorganizar-cabecalho
+git status
+git log --oneline --decorate --all
+```
+
+Para publicar a branch:
+
+```bash
 git push -u origin refactor/reorganizar-cabecalho
 ```
+
+Se o Git solicitar autenticação, entre com sua conta do GitHub.
 
 Depois, no GitHub, abra um Pull Request da branch `refactor/reorganizar-cabecalho` para `main`.
 
