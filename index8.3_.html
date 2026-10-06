@@ -36,32 +36,44 @@
     }
 
     header {
-        background:rgb(255, 153, 153);;
+        background:rgb(255, 153, 153);
         padding:16px 30px;
         display:flex;
         justify-content:space-between;
-        align-items:center;gap:30px
+        align-items:center;
+        gap:30px;
+    }
+
+    .cabecalho-conteudo {
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:30px;
     }
 
     .identidade h1 {
         font-size:22px;
-        margin-bottom:2px
+        margin-bottom:2px;
     }
     
     .identidade p {
-        font-size:14px
+        font-size:14px;
     }
 
     nav ul {
         display:flex;
-        gap:30px;list-style:none
+        align-items:center;
+        gap:24px;
+        list-style:none;
     }
     
-    nav a{
+    nav a {
         color:#111;
         font-weight:bold;
         display:block;
-        padding:10px 8px
+        padding:10px 8px;
+        white-space:nowrap;
     }
 
     main {
@@ -188,6 +200,14 @@
             padding:12px 18px;
         }
 
+        .cabecalho-conteudo {
+            width:auto;
+            flex:1;
+            display:flex;
+            justify-content:flex-start;
+            gap:12px;
+        }
+
         header .identidade {
             display:block;
             flex:1;
@@ -201,6 +221,11 @@
         header .identidade p,
         header nav {
             display:none;
+        }
+
+        header.cabecalho-aberto .cabecalho-conteudo {
+            width:100%;
+            flex-wrap:wrap;
         }
 
         header.cabecalho-aberto nav {
@@ -400,18 +425,22 @@
 <body>
     <header>
         <button class="menu-toggle" type="button" aria-label="Abrir menu do cabeçalho" aria-expanded="false">☰</button>
-        <div class="identidade">
-        <h1>Guia de Locais</h1>
-        <p>São Paulo - SP</p>
-    </div>
+
+        <div class="cabecalho-conteudo">
+            <div class="identidade">
+                <h1>Guia de Locais</h1>
+                <p>São Paulo - SP</p>
+            </div>
+
             <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="detalhe.html">Locais</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="detalhe.html">Locais</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <aside class="lateral">
