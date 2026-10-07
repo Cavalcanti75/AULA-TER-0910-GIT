@@ -28,31 +28,3 @@ O histórico do exercício deve conter pelo menos 3 commits semânticos:
 
 `https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git`
 
-## Como publicar
-
-O ZIP contém o histórico Git já preparado, incluindo a branch `refactor/reorganizar-cabecalho` e o remoto `origin` configurado para o repositório informado.
-
-Depois de extrair a pasta, abra o terminal dentro dela e confira:
-
-```bash
-git status
-git log --oneline --decorate --all
-```
-
-Para publicar a branch:
-
-```bash
-git push -u origin refactor/reorganizar-cabecalho
-```
-
-Se o Git solicitar autenticação, entre com sua conta do GitHub.
-
-Depois, no GitHub, abra um Pull Request da branch `refactor/reorganizar-cabecalho` para `main`.
-
-Título sugerido:
-
-`refactor: reorganizar cabeçalho do guia`
-
-Descrição sugerida:
-
-> Reorganiza o cabeçalho do guia mantendo o conteúdo e os links existentes. A alteração melhora o agrupamento, alinhamento e espaçamento entre a identidade do site e o menu, preservando o comportamento responsivo.
