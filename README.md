@@ -27,24 +27,3 @@ O histórico do exercício deve conter pelo menos 3 commits semânticos:
 ## Repositório remoto
 
 `https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git`
-
-## Como publicar
-
-Se o Git já estiver configurado, entre nesta pasta e execute:
-
-```bash
-git remote add origin https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git
-git branch -M main
-git checkout -b refactor/reorganizar-cabecalho
-git push -u origin refactor/reorganizar-cabecalho
-```
-
-Depois, no GitHub, abra um Pull Request da branch `refactor/reorganizar-cabecalho` para `main`.
-
-Título sugerido:
-
-`refactor: reorganizar cabeçalho do guia`
-
-Descrição sugerida:
-
-> Reorganiza o cabeçalho do guia mantendo o conteúdo e os links existentes. A alteração melhora o agrupamento, alinhamento e espaçamento entre a identidade do site e o menu, preservando o comportamento responsivo.
