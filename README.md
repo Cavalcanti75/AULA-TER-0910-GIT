@@ -1,4 +1,4 @@
-# Exercício 9-1 — O guia ganha histórico
+.# Exercício 9-1 — O guia ganha histórico
 
 Projeto preparado a partir do exercício 8-3 para a atividade de Git/GitHub.
 
@@ -26,4 +26,10 @@ O histórico do exercício deve conter pelo menos 3 commits semânticos:
 
 ## Repositório remoto
 
-`https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git`
+Página Publicada:
+
+https://cavalcanti75.github.io/AULA-TER-0910-GIT/index.html
+
+GitHub:
+
+https://github.com/Cavalcanti75/AULA-TER-0910-GIT.git
